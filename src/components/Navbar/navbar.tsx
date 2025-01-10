@@ -27,7 +27,7 @@ export default function Navbar() {
     })
     return (
         <div className="flex justify-between items-center p-2 md:px-8 md:py-4  lg:text-md font-Rubik  space-x-2">
-            <div className="flex md:gap-4 gap-2 items-center capitalize "> 
+            <div className="flex md:gap-4 gap-2 items-center capitalize xl:text-xl "> 
                 <Link to="/">linkedin</Link> /
                 <Link to="/">instagram</Link> /
                 <Link to="/">Telegram</Link>
@@ -36,7 +36,7 @@ export default function Navbar() {
              {
                 !isMobile && (
                     <div className="flex space-x-4">
-                        <div className="flex space-x-8">
+                        <div className="flex space-x-8 xl:text-xl">
                             <NavLink to="/">About me</NavLink> 
                             <NavLink to="/">Services</NavLink> 
                             <NavLink to="/">Projects</NavLink>
@@ -58,7 +58,7 @@ export default function Navbar() {
                                 <NavigationMenuTrigger>
                                     <img src={Menu} alt="menu icon" />
                                 </NavigationMenuTrigger>
-                                <NavigationMenuContent className="flex flex-col p-2 text-[14px]">
+                                <NavigationMenuContent className="flex flex-col px-2 py-3 text-[14px]">
                                         <NavLink to="/">About me</NavLink> 
                                         <NavLink to="/">Services</NavLink> 
                                         <NavLink to="/">Projects</NavLink>
