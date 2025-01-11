@@ -44,12 +44,15 @@ export default function Hero() {
                              animate={{ opacity: 1 , x: 0 }} 
                              transition={{ duration: 0.8 , delay: 1 , ease: 'linear' }}
                              className=" text-xl text-center md:text-left md:text-3xl lg:text-4xl xl:text-5xl xl:leading-tight md:p-0 font-Bebas md:mx-0 mx-auto ">
-                            <span className="text-[#ffffff]"> Hi, I'm Sudeis F.</span> <br />
-                            <span className="text-[#ffffff]">A Passionate MERN Stack Developer </span> <br />
+                            <span className="text-[#ffffff]"> Hello! </span> <br />
+                            <span className="text-[#ffffff]"> my name is sudeis F. </span> <br />
                             <span className="text-[#ffffff] ">
-                                and UI/UX EnthusiastI craft seamless web experiences that bring design and functionality together.
+                            i am full stack web developer <br />
+                             and UI/UX EnthusiastI 
                             </span>
-                                </m.h1>
+                                </m.h1> 
+
+
 
                                 <m.button
                                  initial={{ opacity: 0, y: 50 }}

@@ -26,7 +26,7 @@ export default function Navbar() {
         }
     })
     return (
-        <div className="flex justify-between items-center p-2 md:px-8 md:py-4  lg:text-md font-Rubik  space-x-2">
+        <div className=" flex justify-between items-center p-2 md:px-8 md:py-4  lg:text-md font-Rubik  space-x-2 sticky top-0 bg-[#ffffff]">
             <div className="flex md:gap-4 gap-2 items-center capitalize xl:text-xl "> 
                 <Link to="/">linkedin</Link> /
                 <Link to="/">instagram</Link> /
