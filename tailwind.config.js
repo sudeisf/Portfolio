@@ -59,6 +59,14 @@ export default {
   		'Rubik': [
   			'Rubik',
   			'sans-serif'
+  		],
+  		'Bebas': [
+  			'Bebas Neue',
+  			'sans-serif'
+  		],
+  		'Work': [
+  			'Work Sans',
+  			'sans-serif'
   		]
   	}
   },
