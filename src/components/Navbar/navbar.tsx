@@ -37,10 +37,10 @@ export default function Navbar() {
                 !isMobile && (
                     <div className="flex space-x-4">
                         <div className="flex space-x-8 xl:text-xl">
-                            <NavLink to="/">About me</NavLink> 
-                            <NavLink to="/">Services</NavLink> 
-                            <NavLink to="/">Projects</NavLink>
-                            <NavLink to="/">Contact</NavLink>
+                        <a href="#about" className="hover:underline">About Me</a>
+                        <a href="#services" className="hover:underline">Services</a>
+                        <a href="#projects" className="hover:underline">Projects</a>
+                        <a href="#contact" className="hover:underline">Contact</a>
                         </div>
                         <div>
                             <img src={github} alt="github" className="w-7" />
