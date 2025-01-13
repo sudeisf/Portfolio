@@ -48,7 +48,7 @@ export default function Services() {
         onMouseEnter={handleHoverStart}
         onMouseLeave={handleHoverEnd}
         ref={servicesRef} 
-        className="flex flex-row overflow-x-scroll scrollbar-hide items-center w-[95%] md:w-[90%] space-x-4 mx-auto snap-x snap-mandatory"
+        className="flex flex-row overflow-x-scroll scrollbar-hide items-center w-[100%] md:w-[90%] space-x-4 mx-auto snap-x snap-mandatory"
         style={{ transition: "scroll-left 1s ease-out" }} // Add smooth transition
       >
         <div className="bg-[#1e1e1e] text-white p-5 font-Rubik w-[360px] h-[360px] rounded-[20px] border-none space-y-4 flex-shrink-0 snap-center">
