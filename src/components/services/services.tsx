@@ -6,6 +6,8 @@ import android from "@/assets/android.svg";
 import website from "@/assets/website.svg";
 import { motion as m } from "motion/react";
 import { useRef } from "react";
+import { Marquee } from "../marquee/marquee";
+
 
 export default function Services() {
   // Create a ref to the container
@@ -34,10 +36,11 @@ export default function Services() {
       });
     }
   };
+  const svgPaths = Array.from({ length: 12 }, (_, i) => `/${i + 1}.svg`);
 
   return (
-    <m.div className="py-4 space-y-8" id="services">
-      <h1 className="text-4xl text-center font-Rubik uppercase font-semibold  py-8">
+    <m.div className="py-4 space-y-12" id="services">
+      <h1 className="text-4xl text-center font-Rubik uppercase font-semibold  py-4">
         Services
       </h1>
 
@@ -119,6 +122,20 @@ export default function Services() {
           </Link>
         </div>
       </m.div>
+     <div >
+      <Marquee 
+          duration={15} containerClassName="bg-[#ffffff] py-6">
+            {/* Render all SVGs dynamically */}
+        {svgPaths.map((path, index) => (
+          <img
+            key={index}
+            src={path}
+            alt={`Icon ${index + 1}`}
+            className="h-14 mx-8"
+          />
+        ))}
+      </Marquee>
+     </div>
     </m.div>
   );
 }
