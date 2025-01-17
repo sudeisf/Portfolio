@@ -117,9 +117,6 @@ export default function Services() {
             functionality with aesthetics, ensuring seamless and engaging
             digital experiences.
           </p>
-          <Link to="/" className="text-sm p-2 flex gap-4 items-center">
-            Learn more <img src={arrow} alt="" className="inline-block w-5" />
-          </Link>
         </div>
       </m.div>
      <div >
