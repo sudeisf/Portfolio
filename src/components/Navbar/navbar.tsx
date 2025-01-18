@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from "react";
-import { NavLink, Link } from "react-router-dom";
+import {  Link } from "react-router-dom";
 import Menu from "@/assets/menu.svg";
 import github from "@/assets/github.svg";
  // Add a close icon
@@ -68,7 +68,7 @@ useEffect(() => {
       )}
 
       {isMobile && (
-        <div className="relative">
+        <div className="relative ">
           {/* Menu Button */}
           <button onClick={toggleSidebar} className="p-2">
             <img src={Menu} alt="menu icon" className="w-6 h-6" />
@@ -77,7 +77,7 @@ useEffect(() => {
           {/* Sidebar */}
           <div
             ref={sidebarRef}
-            className={`w-64 h-svh bg-[#1e1e1e] absolute -top-2 -left-52  text-white transition-transform duration-600 ease-linear ${
+            className={`w-64 h-screen backdrop-blur-md backdrop-opacity-45 backdrop-filter bg-[#1e1e1e] absolute -top-2 -left-52  text-white transition-transform duration-600 ease-linear ${
                 isOpen ? "translate-x-0" : "hidden -translate-x-full"
             }`}
 >
@@ -87,18 +87,18 @@ useEffect(() => {
                 <img src='./close.svg' alt="close icon" className="w-6 h-6" />
               </button>
 
-              <NavLink to="#about" className="block py-4 hover:underline">
+              <a href="#about" className="block py-4 hover:underline">
                 About Me
-              </NavLink>
-              <Link to="#services" className="block py-4 hover:underline">
+              </a>
+              <a href="#services" className="block py-4 hover:underline">
                 Services
-              </Link>
-              <NavLink to="#projects" className="block py-4 hover:underline">
+              </a>
+              <a href="#projects" className="block py-4 hover:underline">
                 Projects
-              </NavLink>
-              <NavLink to="#contact" className="block py-4 hover:underline">
+              </a>
+              <a href="#contact" className="block py-4 hover:underline">
                 Contact
-              </NavLink>
+              </a>
               <div className="mt-8">
                 <img src={github} alt="github" className="w-7" />
               </div>
