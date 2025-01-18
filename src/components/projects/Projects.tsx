@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export function Projects() {
     return (
-        <div id="projects" className="md:flex md:flex-row pt-10 w-[90%] mx-auto">
+        <div id="projects" className="md:flex md:flex-row pt-10 w-[90%] mx-auto mt-8">
             {/* Title Section */}
             <div className="w-[80%] md:w-[10%] mx-auto flex items-center justify-center ">
                 <h1 className="text-black py-8 md:py-0 md:p-7 font-Rubik uppercase  font-semibold text-4xl md:text-6xl md:transform md:-rotate-90">
