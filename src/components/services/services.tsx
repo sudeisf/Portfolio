@@ -39,8 +39,8 @@ export default function Services() {
   const svgPaths = Array.from({ length: 12 }, (_, i) => `/${i + 1}.svg`);
 
   return (
-    <m.div className="py-4 space-y-12" id="services">
-      <h1 className="text-4xl text-center font-Rubik uppercase font-semibold  py-4">
+    <m.div className="py-4 space-y-20">
+      <h1  id="services" className="text-4xl xl:text-5xl text-center font-Rubik uppercase font-semibold ">
         Services
       </h1>
 

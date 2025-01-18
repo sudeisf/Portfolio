@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export function Projects() {
     return (
         <div id="projects" className="md:flex md:flex-row pt-10 w-[90%] mx-auto">
@@ -14,11 +16,16 @@ export function Projects() {
                 <div className="space-y-4 md:flex md:flex-row md:space-x-8">
                     <div className="bg-[#1e1e1e]  md:w-[50%] h-[217px] lg:h-[250px] mx-auto rounded-xl"></div>
                     <div className="flex flex-col w-[80%] md:w-[50%] md:text-lg mx-auto text-center md:text-left font-Rubik">
-                    <h2 className="font-Rubik uppercase font-semibold py-2 text-lg xl:text-2xl">Project 1</h2>
-                        <p className="text-sm md:text-md xl:text-lg ">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                        </p>
+                    <div className="flex flex-col gap-2">
+                            <h2 className="font-Rubik uppercase font-semibold py-2 text-lg xl:text-2xl">Project 1</h2>
+                            <p className="text-sm md:text-md xl:text-lg ">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                            </p>
+                            <Link to={''} className="flex items-center space-x-2 hover:underline gap-5 justify-center py-2">
+                            wath live <img src="/live.svg" alt="" className="w-6 h-6" />
+                            </Link>
+                        </div>
                     </div>
                 </div>
 
@@ -26,11 +33,17 @@ export function Projects() {
                 <div className="space-y-8 md:flex md:flex-row-reverse md:space-x-8">
                     <div className="bg-[#1e1e1e]  h-[217px] md:w-[50%] lg:h-[250px] mx-auto rounded-xl"></div>
                     <div className="flex flex-col w-[80%] md:w-[50%] md:text-lg mx-auto text-center md:text-left font-Rubik">
-                    <h2 className="font-Rubik uppercase font-semibold py-2 text-lg xl:text-2xl">Project 2</h2>
-                        <p className="text-sm md:text-md xl:text-lg ">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                        </p>
+                        <div className="flex flex-col gap-2">
+                            <h2 className="font-Rubik uppercase font-semibold py-2 text-lg xl:text-2xl">Project 2</h2>
+                            <p className="text-sm md:text-md xl:text-lg ">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                            </p>
+                            <Link to={''} className="flex items-center space-x-2 hover:underline gap-5 justify-center py-2">
+                            wath live <img src="/live.svg" alt="" className="w-6 h-6" />
+                            </Link>
+                        </div>
+                      
                     </div>
                 </div>
 
@@ -38,11 +51,16 @@ export function Projects() {
                 <div className="space-y-4 md:flex md:flex-row md:space-x-8">
                     <div className="bg-[#1e1e1e]  h-[217px] md:w-[50%] lg:h-[250px] mx-auto rounded-xl"></div>
                     <div className="flex flex-col  md:w-[50%] md:text-lg mx-auto text-center md:text-left font-Rubik">
-                    <h2 className="font-Rubik uppercase font-semibold py-2 text-lg xl:text-2xl">Project 3</h2>
-                        <p className="text-sm md:text-md xl:text-lg ">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                        </p>
+                    <div className="flex flex-col gap-2">
+                            <h2 className="font-Rubik uppercase font-semibold py-2 text-lg xl:text-2xl">Project 3</h2>
+                            <p className="text-sm md:text-md xl:text-lg ">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                            </p>
+                            <Link to={''} className="flex items-center space-x-2 hover:underline gap-5 justify-center py-2">
+                            wath live <img src="/live.svg" alt="" className="w-6 h-6" />
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </div>
