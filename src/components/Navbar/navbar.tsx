@@ -11,35 +11,21 @@ export default function Navbar() {
   // Create a ref for the sidebar
   const sidebarRef = useRef<HTMLDivElement>(null);
 
-  // Check screen width to toggle mobile view
-  useEffect(() => {
-    const handleResize = () => setIsMobile(window.innerWidth <= 850);
+  // useEffect to check screen width
+useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 850);
+    };
+  
+    handleResize(); // Run on initial render
     window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  // Close the sidebar if clicked outside
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent | TouchEvent) => {
-      if (sidebarRef.current?.contains(event.target as Node)) return;
-      setIsOpen(false);
-    };
-
-    if (isOpen) {
-      document.addEventListener("mousedown", handleClickOutside);
-      document.addEventListener("touchstart", handleClickOutside);
-    } else {
-      document.removeEventListener("mousedown", handleClickOutside);
-      document.removeEventListener("touchstart", handleClickOutside);
-    }
-
+  
     return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-      document.removeEventListener("touchstart", handleClickOutside);
+      window.removeEventListener("resize", handleResize); // Cleanup on unmount
     };
-  }, [isOpen]);
+  }, []);
+  
 
-  // Toggle sidebar visibility
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
   };
@@ -91,10 +77,10 @@ export default function Navbar() {
           {/* Sidebar */}
           <div
             ref={sidebarRef}
-            className={`w-64 h-svh bg-[#1e1e1e] absolute -top-2 left-12 text-white transition-transform duration-300 ease-in-out ${
-              isOpen ? "translate-x-0" : "-translate-x-full"
+            className={`w-64 h-svh bg-[#1e1e1e] absolute -top-2 -left-52  text-white transition-transform duration-600 ease-linear ${
+                isOpen ? "translate-x-0" : "hidden -translate-x-full"
             }`}
-          >
+>
             <div className="p-6">
               {/* Close Button */}
               <button onClick={closeSidebar} className="absolute top-4 right-4">
@@ -104,9 +90,9 @@ export default function Navbar() {
               <NavLink to="#about" className="block py-4 hover:underline">
                 About Me
               </NavLink>
-              <NavLink to="#services" className="block py-4 hover:underline">
+              <Link to="#services" className="block py-4 hover:underline">
                 Services
-              </NavLink>
+              </Link>
               <NavLink to="#projects" className="block py-4 hover:underline">
                 Projects
               </NavLink>
