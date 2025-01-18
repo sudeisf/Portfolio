@@ -43,9 +43,9 @@ export default function Hero() {
                              initial={{ opacity: 0, x: 130 }}
                              animate={{ opacity: 1 , x: 0 }} 
                              transition={{ duration: 0.8 , delay: 1 , ease: 'linear' }}
-                             className=" text-xl text-center md:text-left md:text-3xl lg:text-4xl xl:text-5xl xl:leading-tight md:p-0 font-Bebas md:mx-0 mx-auto ">
+                             className=" text-xl text-center md:text-left md:text-3xl lg:text-4xl xl:text-5xl xl:leading-tight md:p-0 font-Rubik uppercase md:mx-0 mx-auto ">
                             <span className="text-[#ffffff]"> Hello! </span> <br />
-                            <span className="text-[#ffffff]"> my name is sudeis F. </span> <br />
+                            <span className="text-[#ffffff]"> I'm sudeis F. </span> <br />
                             <span className="text-[#ffffff] ">
                             i am full stack web developer <br />
                              and UI/UX EnthusiastI 
@@ -58,7 +58,7 @@ export default function Hero() {
                                  initial={{ opacity: 0, y: 50 }}
                                  animate={{ opacity: 1 , y: 0 }} 
                                  transition={{ duration: 0.8 , delay: 1 , ease: 'linear' }}
-                                 className="bg-[#1e1e1e] border-2  text-white xl:text-lg capitalize py-2 lg:py-3 mt-4 rounded-lg mx-auto md:mx-0 w-[40%] md:w-[20%] font-Rubik ">
+                                 className="bg-[#ffffff] border-2 uppercase xl:text-lg  py-2 lg:py-3 mt-4 rounded-lg mx-auto md:mx-0 w-[40%] md:w-[20%] font-Rubik font-semibold ">
                                     hire me
                                 </m.button>
                             </div>
