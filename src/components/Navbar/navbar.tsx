@@ -62,7 +62,15 @@ useEffect(() => {
             </a>
           </div>
           <div>
-            <img src={github} alt="github" className="w-7" />
+          <Link
+                to='https://github.com/sudeisf'
+                > 
+                  <img 
+                    src={github} 
+                    alt="GitHub" 
+                    className="w-7 cursor-pointer hover:opacity-80 transition-opacity duration-200"
+                  />
+                </Link>
           </div>
         </div>
       )}
@@ -99,17 +107,7 @@ useEffect(() => {
               <a href="#contact" className="block py-4 hover:underline">
                 Contact
               </a>
-              <div className="mt-8">
-                <Link
-                to='https://github.com/sudeisf'
-                > 
-                  <img 
-                    src={github} 
-                    alt="GitHub" 
-                    className="w-7 cursor-pointer hover:opacity-80 transition-opacity duration-200"
-                  />
-                </Link>
-              </div>
+              
 
             </div>
           </div>
