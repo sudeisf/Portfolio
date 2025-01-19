@@ -28,7 +28,7 @@ export default function Contact() {
 
     return (
         <>
-            <div className="md:mb-20">
+            <div className="md:mb-20" id="contact">
                 <h1 className="py-12 text-lg text-center mb-4 md:text-3xl">Let's connect and bring ideas to life!</h1>
                 <div className="md:flex md:flex-row md:space-x-8">
                 <div className="bg-[#1e1e1e] md:w-[50%] h-[350px] mt-8  mx-auto  text-white p-8 md:p-3 text-sm font-Rubik space-y-4 md:space-y-0 " >

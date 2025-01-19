@@ -39,9 +39,9 @@ useEffect(() => {
     <div className="flex justify-between items-center p-2 md:px-8 md:py-3 lg:text-md font-Rubik z-10 space-x-2 sticky top-0 bg-[#ffffff] bg-opacity-90">
       {/* Left section (Social Links) */}
       <div className="flex md:gap-4 gap-2 items-center capitalize xl:text-xl">
-        <Link to="/">linkedin</Link> /
-        <Link to="/">instagram</Link> /
-        <Link to="/">Telegram</Link>
+        <Link to="https://www.linkedin.com/in/sudeis-fedlu-554147341/">linkedin</Link> /
+        <Link to="https://www.instagram.com/sudeis_f/">instagram</Link> /
+        <Link to="https://x.com/sudeisFA">Twitter</Link>
       </div>
 
       {/* Desktop Navigation Links */}
@@ -100,8 +100,17 @@ useEffect(() => {
                 Contact
               </a>
               <div className="mt-8">
-                <img src={github} alt="github" className="w-7" />
+                <Link
+                to='https://github.com/sudeisf'
+                > 
+                  <img 
+                    src={github} 
+                    alt="GitHub" 
+                    className="w-7 cursor-pointer hover:opacity-80 transition-opacity duration-200"
+                  />
+                </Link>
               </div>
+
             </div>
           </div>
         </div>
