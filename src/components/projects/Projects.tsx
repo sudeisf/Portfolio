@@ -86,7 +86,7 @@ export function Projects() {
                     </div>
                     <div className="flex flex-col w-[80%] md:w-[50%] md:text-lg mx-auto text-center md:text-left font-Rubik">
                         <div className="flex flex-col gap-2">
-                        <h2 className="font-Rubik uppercase font-semibold py-2 text-lg xl:text-4xl">Portfolio Design</h2>
+                        <h2 className="font-Rubik cpitalize font-semibold py-2 text-lg xl:text-4xl">Portfolio Design</h2>
                             <p className="text-sm md:text-md xl:text-lg">
                                 A clean and modern portfolio website designed in Figma, focusing on user experience and visual hierarchy. 
                                 The design process involved thorough research and careful consideration of user needs, resulting in an 
