@@ -76,7 +76,7 @@ export function Projects() {
                 </div>
 
                 {/* Project 4 */}
-                <div className="space-y-8 md:flex md:flex-row-reverse md:space-x-8 ">
+                <div className="space-y-8 items-center justify-between w-full md:flex md:flex-row-reverse md:space-x-8 ">
                     <div className="w-full md:w-[50%] mx-auto">
                         <img 
                             src="/project-image/ux-design.png" 
@@ -85,7 +85,7 @@ export function Projects() {
                         />
                     </div>
                     <div className="flex flex-col w-[80%] md:w-[50%] md:text-lg mx-auto text-center md:text-left font-Rubik">
-                        <div className="flex flex-col gap-2">
+                        <div className="flex flex-col gap-2 ">
                         <h2 className="font-Rubik cpitalize font-semibold py-2 text-lg xl:text-4xl">Portfolio Design</h2>
                             <p className="text-sm md:text-md xl:text-lg">
                                 A clean and modern portfolio website designed in Figma, focusing on user experience and visual hierarchy. 
