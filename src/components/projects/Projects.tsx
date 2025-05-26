@@ -81,27 +81,26 @@ export function Projects() {
                         <img 
                             src="/project-image/ux-design.png" 
                             alt="UI/UX Design Project" 
-                            className=" bg-[#424040] h-fit w-full  object-scale-down rounded-md"
+                            className=" bg-[#424040] h-fit w-full ml-5  object-scale-down rounded-md"
                         />
                     </div>
                     <div className="flex flex-col w-[80%] md:w-[50%] md:text-lg mx-auto text-center md:text-left font-Rubik">
                         <div className="flex flex-col gap-2">
-                            <h2 className="font-Rubik uppercase font-semibold py-2 text-lg xl:text-2xl">UI/UX Design Portfolio</h2>
+                        <h2 className="font-Rubik uppercase font-semibold py-2 text-lg xl:text-4xl">Portfolio Design</h2>
                             <p className="text-sm md:text-md xl:text-lg">
-                                A collection of modern UI/UX designs showcasing user-centered design principles, 
-                                wireframing, and interactive prototypes. Focused on creating intuitive and 
-                                engaging user experiences.
+                                A clean and modern portfolio website designed in Figma, focusing on user experience and visual hierarchy. 
+                                The design process involved thorough research and careful consideration of user needs, resulting in an 
+                                intuitive and engaging interface that effectively showcases my work.
                             </p>
                             <div className="text-sm md:text-md xl:text-lg p-2 text-gray-800">
-                                <span className="font-semibold">Design Skills:</span>
+                                <span className="font-semibold">Design Process:</span>
                                 <ul className="list-none space-y-1 mt-1">
-                                    <li>✔ User Research & Personas</li>
-                                    <li>✔ Wireframing & Prototyping</li>
-                                    <li>✔ Visual Design & Branding</li>
-                                    <li>✔ User Testing & Iteration</li>
+                                    <li>✔ User Research & Analysis</li>
+                                    <li>✔ Clean & Minimalist Design</li>
+                                    <li>✔ Responsive Layout</li>
+                                    <li>✔ Figma Prototyping</li>
                                 </ul>
                             </div>
-                           
                         </div>
                     </div>
                 </div>
