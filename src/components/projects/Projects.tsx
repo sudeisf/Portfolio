@@ -77,14 +77,14 @@ export function Projects() {
 
                 {/* Project 4 */}
                 <div className="space-y-8 md:items-center justify-between w-full md:flex md:flex-row-reverse md:justify-between md:gap-4 ">
-                    <div className="w-full  mx-auto border-2">
+                    <div className="w-full md:w-1/2  mx-auto border-2">
                         <img 
                             src="/project-image/ux-design.png" 
                             alt="UI/UX Design Project" 
                             className=" bg-[#424040] h-fit w-full   object-scale-down rounded-md"
                         />
                     </div>
-                    <div className="flex flex-col w-full  md:text-lg  text-center md:text-left font-Rubik">
+                    <div className="flex flex-col w-full md:w-1/2  md:text-lg  text-center md:text-left font-Rubik">
                         <div className="flex flex-col gap-2 ">
                         <h2 className="font-Rubik cpitalize font-semibold py-2 text-lg xl:text-4xl">Portfolio Design</h2>
                             <p className="text-sm text-justify md:text-md xl:text-lg p-0">
